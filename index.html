@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Supercar Sales Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    .header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    .sidebar {
+      height: 100vh;
+      width: 200px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #222;
+      color: white;
+      padding-top: 60px;
+    }
+
+    .sidebar a {
+      padding: 15px;
+      display: block;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #444;
+    }
+
+    .main {
+      margin-left: 200px;
+      padding: 20px;
+    }
+
+    .car-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .car-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .car-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .car-info {
+      padding: 15px;
+    }
+
+    .car-info h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .car-info p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .car-info .price {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    🚗 Supercar Sales Dashboard
+  </div>
+
+  <div class="sidebar">
+    <a href="#">Dashboard</a>
+    <a href="#">Inventory</a>
+    <a href="#">Orders</a>
+    <a href="#">Customers</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <div class="main">
+    <h2>Available Supercars</h2>
+    <div class="car-list">
+      
+      <!-- Car 1 -->
+      <div class="car-card">
+        <img src="https://cdn.motor1.com/images/mgl/BE22x/s1/4x3/ferrari-sf90-stradale.jpg" alt="Ferrari SF90">
+        <div class="car-info">
+          <h3>Ferrari SF90 Stradale</h3>
+          <p>986 hp hybrid beast with jaw-dropping performance.</p>
+          <div class="price">$625,000</div>
+        </div>
+      </div>
+
+      <!-- Car 2 -->
+      <div class="car-card">
+        <img src="https://cdn.motor1.com/images/mgl/0ANb6/s1/4x3/lamborghini-aventador-svj.jpg" alt="Lamborghini Aventador SVJ">
+        <div class="car-info">
+          <h3>Lamborghini Aventador SVJ</h3>
+          <p>V12 engine, extreme design, and unbeatable roar.</p>
+          <div class="price">$517,000</div>
+        </div>
+      </div>
+
+      <!-- Car 3 -->
+      <div class="car-card">
+        <img src="https://cdn.motor1.com/images/mgl/BooJb/s1/4x3/2021-mclaren-765lt.jpg" alt="McLaren 765LT">
+        <div class="car-info">
+          <h3>McLaren 765LT</h3>
+          <p>Track-focused performance with British engineering.</p>
+          <div class="price">$385,000</div>
+        </div>
+      </div>
+
+      <!-- Car 4 -->
+      <div class="car-card">
+        <img src="https://cdn.motor1.com/images/mgl/M4zRk/s1/4x3/bugatti-chiron-super-sport.jpg" alt="Bugatti Chiron">
+        <div class="car-info">
+          <h3>Bugatti Chiron Super Sport</h3>
+          <p>Quad-turbocharged W16. Pure luxury meets speed.</p>
+          <div class="price">$3,900,000</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
